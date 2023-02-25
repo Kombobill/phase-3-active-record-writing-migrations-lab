@@ -1,4 +1,8 @@
 class CreateStudents < ActiveRecord::Migration[6.1]
-  def change
+  def change 
+    create_table :examples do |t|
+    t.string :name
+    t.timestamps
+    end
   end
 end
